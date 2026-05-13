@@ -1,0 +1,72 @@
+# .github/workflows/scraper.yml
+#
+# Runs the NSE/BSE announcement bot every 5 minutes.
+#
+# ⚠️  GitHub Actions has a minimum cron interval of 5 minutes.
+#
+# Required Secrets (Settings → Secrets → Actions):
+#   TELEGRAM_TOKEN   — your @BotFather token
+#   TELEGRAM_CHAT_ID — your personal / group chat ID
+
+name: NSE-BSE Announcement Bot
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"     # every 30 minutes, 24×7
+  workflow_dispatch:            # allow manual trigger from Actions UI
+
+# Prevent parallel runs from stomping on the SQLite DB
+concurrency:
+  group: announcement-bot
+  cancel-in-progress: false     # queue, don't cancel
+
+jobs:
+  scrape:
+    name: Fetch & Alert
+    runs-on: ubuntu-latest
+    timeout-minutes: 8          # kill if something hangs
+
+    steps:
+      # ── 1. Check out code ──────────────────────────────────────────────────
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ── 2. Restore SQLite DB from cache ────────────────────────────────────
+      #   The DB is NOT committed to git; we keep it in GH Actions cache so
+      #   state (seen hashes, alert flags) persists across runs.
+      - name: Restore announcements DB
+        id: cache-db
+        uses: actions/cache@v4
+        with:
+          path: announcements.db
+          key: announcements-db-${{ runner.os }}
+          restore-keys: |
+            announcements-db-
+
+      # ── 3. Python setup ────────────────────────────────────────────────────
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      # ── 4. Install dependencies ────────────────────────────────────────────
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # ── 5. Run the bot ─────────────────────────────────────────────────────
+      - name: Run scraper
+        env:
+          TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          DB_PATH:          announcements.db
+        run: python scraper.py
+
+      # ── 6. Save updated DB back to cache ───────────────────────────────────
+      #   Always save, even if the run step fails, so we don't lose state.
+      - name: Save announcements DB
+        if: always()
+        uses: actions/cache@v4
+        with:
+          path: announcements.db
+          key: announcements-db-${{ runner.os }}
