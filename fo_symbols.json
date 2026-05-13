@@ -1,0 +1,1276 @@
+{
+  "updated": "2026-05-13 13:23 UTC",
+  "count": 254,
+  "symbols": [
+    {
+      "symbol": "360ONE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "AARTIIND",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ABB",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ABCAPITAL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ABFRL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ADANIENT",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ADANIGREEN",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ADANIPOWER",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ADANITRANS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "AFFLE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "AIAENG",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ALKEM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "AMBER",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ANGELONE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "APOLLOHOSP",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "APOLLOTYRE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ASTRAL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ATGL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ATUL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "AUROPHARMA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "AWL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "AXISBANK",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BAJAJ-AUTO",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BAJAJHLDNG",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BAJFINANCE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BALKRISIND",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BALRAMCHIN",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BANDHANBNK",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BANKBARODA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BEL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BERGEPAINT",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BHARTIARTL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BHEL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BIKAJI",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BIOCON",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BLUESTARCO",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BOSCHLTD",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BPCL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BRIGADE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BRITANNIA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "BSE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "CANBK",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "CDSL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "CEATLTD",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "CHAMBLFERT",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "CHOLAFIN",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "CIPLA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "COALINDIA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "COCHINSHIP",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "COFORGE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "COLPAL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "CONCOR",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "COROMANDEL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "CROMPTON",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "CUMMINSIND",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "DABUR",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "DEEPAKFERT",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "DEEPAKNTR",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "DELHIVERY",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "DEVYANI",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "DIVISLAB",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "DIXON",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "DLFINDIA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "DMART",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "DRREDDY",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "EICHERMOT",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ELGIEQUIP",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "EMAMILTD",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "EQUITASBNK",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ERIS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ESCORTS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "EXIDEIND",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "FEDERALBNK",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "FINOLEX",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "FLUOROCHEM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "FORTIS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "GAIL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "GHCL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "GICRE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "GLAND",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "GLENMARK",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "GMRAIRPORT",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "GNFC",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "GODREJCP",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "GODREJPROP",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "GRANULES",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "GRASIM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "GRSE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "HAL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "HAVELLS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "HCLTECH",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "HDFCBANK",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "HDFCLIFE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "HEIDELBERG",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "HEROMOTOCO",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "HEXAWARE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "HFCL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "HGINFRA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "HINDALCO",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "HINDZINC",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "HPCL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "IBREALEST",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ICICIBANK",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ICICIGI",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ICICIlombard",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "IDEA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "IDFCFIRSTB",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "IGL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "IIFLWAM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "INDIACEM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "INDIAMART",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "INDIGO",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "INDUSINDBK",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "INFOEDGE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "INFOSYS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "IOC",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "IOLCP",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "IPCALAB",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "IRCTC",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "IRFC",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ITC",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "JBCHEPHARM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "JINDALSAW",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "JKCEMENT",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "JSWENERGY",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "JSWSTEEL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "KALPATPOWR",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "KANSAINER",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "KARURVYSYA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "KEC",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "KEI",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "KNRCON",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "LALPATHLAB",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "LAURUSLABS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "LT",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "LTIM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "LTTS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "LUPIN",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "M&M",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "M&MFIN",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MANAPPURAM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MANYAVAR",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MAPMYINDIA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MARICO",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MARUTI",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MAXHEALTH",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MAZAGON",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MCDOWELL-N",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MCX",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "METROPOLIS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MFSL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MGL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MOTHERSON",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MOTILALOFS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MPHASIS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MRF",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "MUTHOOTFIN",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "NARAYANA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "NATCOPHARM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "NATIONALUM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "NAUKRI",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "NAVINFLUOR",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "NESTLEIND",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "NIACL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "NMDC",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "NTPC",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "NYKAA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "OBEROIRLTY",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "OFSS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ONGC",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "PAGEIND",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "PAYTM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "PERSISTENT",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "PETRONET",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "PFC",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "PGHH",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "PHOENIXLTD",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "PIDILITIND",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "PIIND",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "PNB",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "PNCINFRA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "POLICYBZR",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "POLYCAB",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "POWERGRID",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "POWERINDIA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "PRESTIGE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "PVRINOX",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "RADICO",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "RAINBOW",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "RAMCOCEM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "RATNAMANI",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "RAYMOND",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "RBLBANK",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "RECLTD",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "RELIANCE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "RENUKA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ROUTE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SAIL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SBICARD",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SBILIFE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SBIN",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SHOPERSTOP",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SHRIRAMFIN",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SIEMENS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SOBHA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SPICEJET",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SRF",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "STARHEALTH",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "STLTECH",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SUDARSCHEM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SUMICHEM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SUNPHARMA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SUNTECK",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SUNTV",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "SUPREMEIND",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TANLA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TATACHEM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TATACOFFEE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TATACOMM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TATACONSUM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TATAMETALI",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TATAMOTORS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TATAPOWER",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TCS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TECHM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TEJASNET",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "THERMAX",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TIINDIA",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TITAN",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TORNTPHARM",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TORNTPOWER",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TRENT",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "TVSMOTOR",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "UBL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "UJJIVANSFB",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "UNIONBANK",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "UNITDSPR",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "VBL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "VEDANT",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "VEDL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "VOLTAS",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "WESTLIFE",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "WHIRLPOOL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "WIPRO",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "YESBANK",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ZEEL",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ZOMATO",
+      "name": "",
+      "source": "initial"
+    },
+    {
+      "symbol": "ZYDUSLIFE",
+      "name": "",
+      "source": "initial"
+    }
+  ]
+}
