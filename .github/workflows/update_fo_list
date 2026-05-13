@@ -1,0 +1,80 @@
+# .github/workflows/update_fo_list.yml
+#
+# Runs every Sunday at 6:00 AM UTC (11:30 AM IST).
+# Fetches the latest F&O stock list from NSE, saves it to fo_symbols.json,
+# and commits the updated file back to the repo.
+#
+# This means the main scraper never has to call NSE for the F&O universe —
+# it just reads fo_symbols.json, which is always up to date.
+
+name: Weekly F&O List Updater
+
+on:
+  schedule:
+    - cron: "0 6 * * 0"    # Every Sunday 06:00 UTC = 11:30 IST
+  workflow_dispatch:         # Allow manual trigger anytime
+
+jobs:
+  update-fo-list:
+    name: Refresh F&O Universe
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    # Give the workflow permission to commit back to the repo
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Update F&O symbol list
+        run: |
+          python3 - <<'EOF'
+          import requests
+          import time
+          import sys
+          sys.path.insert(0, ".")
+          import config
+          from fo_stocks import update_fo_universe, load_fo_symbols_from_file
+
+          # Build a basic session with NSE cookies
+          sess = requests.Session()
+          sess.headers.update(config.BROWSER_HEADERS)
+          try:
+              sess.get(config.NSE_HOME_URL, timeout=20)
+              time.sleep(2)
+              sess.get(
+                  "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+                  timeout=20,
+              )
+              time.sleep(1)
+          except Exception as e:
+              print(f"Session bootstrap warning: {e}")
+
+          count = update_fo_universe(sess)
+          print(f"fo_symbols.json updated with {count} symbols.")
+          EOF
+
+      - name: Commit updated fo_symbols.json
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add fo_symbols.json
+          # Only commit if the file actually changed
+          if git diff --staged --quiet; then
+            echo "No changes to fo_symbols.json — skipping commit."
+          else
+            git commit -m "chore: update F&O universe $(date -u '+%Y-%m-%d')"
+            git push
+            echo "fo_symbols.json committed and pushed."
+          fi
