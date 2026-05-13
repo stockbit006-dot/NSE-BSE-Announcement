@@ -46,12 +46,38 @@ BROWSER_HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/124.0.0.0 Safari/537.36"
     ),
+    "Accept":             "application/json, text/plain, */*",
+    "Accept-Language":    "en-US,en;q=0.9,hi;q=0.8",
+    "Accept-Encoding":    "gzip, deflate, br",
+    "Referer":            "https://www.nseindia.com/",
+    "Connection":         "keep-alive",
+    "DNT":                "1",
+    "sec-ch-ua":          '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+    "sec-ch-ua-mobile":   "?0",
+    "sec-ch-ua-platform": '"Windows"',
+    "sec-fetch-dest":     "empty",
+    "sec-fetch-mode":     "cors",
+    "sec-fetch-site":     "same-origin",
+    "Cache-Control":      "no-cache",
+    "Pragma":             "no-cache",
+}
+
+# BSE requires different origin headers
+BSE_HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) "
+        "Chrome/124.0.0.0 Safari/537.36"
+    ),
     "Accept":          "application/json, text/plain, */*",
     "Accept-Language": "en-US,en;q=0.9",
     "Accept-Encoding": "gzip, deflate, br",
-    "Referer":         "https://www.nseindia.com/",
+    "Origin":          "https://www.bseindia.com",
+    "Referer":         "https://www.bseindia.com/",
     "Connection":      "keep-alive",
-    "DNT":             "1",
+    "sec-fetch-dest":  "empty",
+    "sec-fetch-mode":  "cors",
+    "sec-fetch-site":  "same-site",
 }
 
 # ─── Announcement lookback window ────────────────────────────────────────────

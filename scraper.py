@@ -41,12 +41,13 @@ log = setup_logger("scraper")
 def build_session() -> requests.Session:
     """
     Create a requests.Session that mimics a real browser.
-    Visits the NSE homepage first to seed cookies — required to bypass
-    NSE's bot detection on subsequent API calls.
+    Visits NSE homepage + a secondary page to properly seed cookies.
+    NSE blocks direct API calls from datacenter IPs without valid cookies.
     """
     sess = requests.Session()
     sess.headers.update(config.BROWSER_HEADERS)
 
+    # Visit homepage
     log.info("Bootstrapping NSE session (visiting homepage)…")
     try:
         resp = sess.get(
@@ -54,10 +55,17 @@ def build_session() -> requests.Session:
             timeout=config.REQUEST_TIMEOUT,
             allow_redirects=True,
         )
-        resp.raise_for_status()
-        log.info("NSE homepage loaded — cookies: %s", list(sess.cookies.keys()))
-        # Brief pause so NSE doesn't see two back-to-back requests instantly
+        log.info("NSE homepage status: %d | cookies: %s",
+                 resp.status_code, list(sess.cookies.keys()))
+        time.sleep(2)
+
+        # Visit the corporate announcements page to get deeper cookies
+        sess.get(
+            "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+            timeout=config.REQUEST_TIMEOUT,
+        )
         time.sleep(1.5)
+        log.info("NSE session warmed up. Cookies: %s", list(sess.cookies.keys()))
     except Exception as exc:
         log.warning("NSE homepage bootstrap failed (%s) — proceeding anyway.", exc)
 
@@ -69,6 +77,11 @@ def refresh_session(sess: requests.Session) -> requests.Session:
     log.info("Refreshing NSE session…")
     try:
         sess.get(config.NSE_HOME_URL, timeout=config.REQUEST_TIMEOUT)
+        time.sleep(2)
+        sess.get(
+            "https://www.nseindia.com/companies-listing/corporate-filings-announcements",
+            timeout=config.REQUEST_TIMEOUT,
+        )
         time.sleep(1)
     except Exception as exc:
         log.warning("Session refresh failed: %s", exc)
@@ -81,12 +94,24 @@ def refresh_session(sess: requests.Session) -> requests.Session:
 def _fetch_nse_raw(sess: requests.Session) -> List[Dict]:
     """Call NSE announcement API and return raw JSON list."""
     resp = sess.get(config.NSE_ANNOUNCE_URL, timeout=config.REQUEST_TIMEOUT)
-    if resp.status_code == 401:
-        log.warning("NSE 401 — refreshing session and retrying…")
+
+    if resp.status_code == 401 or resp.status_code == 403:
+        log.warning("NSE returned %d — refreshing session and retrying…", resp.status_code)
         refresh_session(sess)
-        raise requests.HTTPError("401 — session refreshed, retry")
+        raise requests.HTTPError(f"{resp.status_code} — session refreshed, retry")
+
     resp.raise_for_status()
-    data = resp.json()
+
+    # Guard: NSE sometimes returns an HTML error page with status 200
+    ct = resp.headers.get("Content-Type", "")
+    if "json" not in ct and len(resp.content) < 100:
+        raise ValueError(f"NSE returned non-JSON content-type: {ct!r} body={resp.text[:80]!r}")
+
+    try:
+        data = resp.json()
+    except Exception as exc:
+        raise ValueError(f"NSE JSON parse failed: {exc} | body={resp.text[:120]!r}")
+
     return data if isinstance(data, list) else data.get("data", [])
 
 
@@ -145,10 +170,18 @@ def fetch_nse_announcements(sess: requests.Session, fo_syms: set) -> List[Dict]:
 @retry(max_tries=config.MAX_RETRIES, delay=config.RETRY_DELAY)
 def _fetch_bse_raw(sess: requests.Session) -> List[Dict]:
     """Call BSE announcement API and return raw JSON list."""
-    resp = sess.get(config.BSE_ANNOUNCE_URL, timeout=config.REQUEST_TIMEOUT)
+    # BSE needs its own Origin/Referer headers — use a fresh mini-session
+    bse_sess = requests.Session()
+    bse_sess.headers.update(config.BSE_HEADERS)
+
+    resp = bse_sess.get(config.BSE_ANNOUNCE_URL, timeout=config.REQUEST_TIMEOUT)
     resp.raise_for_status()
-    data = resp.json()
-    # BSE wraps data in {"Table": [...]}
+
+    try:
+        data = resp.json()
+    except Exception as exc:
+        raise ValueError(f"BSE JSON parse failed: {exc} | body={resp.text[:120]!r}")
+
     if isinstance(data, dict):
         return data.get("Table", data.get("data", []))
     return data if isinstance(data, list) else []
